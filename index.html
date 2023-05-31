@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <script src="script.js" defer></script>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="logo.png" />
   </head>
 
   <body>
@@ -32,11 +32,10 @@
         </div>
       </header>
       <section id="homepage">
-       
-          <h1 id="introduction-text">
-            Hi , i'am <span id="name">Mattis</span><br />
-            Student in BTEC IT Digitals Systems
-          </h1>
+        <h1 id="introduction-text">
+          Hi , i'am <span id="name">Mattis</span><br />
+          Student in BTEC IT Digitals Systems
+        </h1>
 
         <div id="blob">
           <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +70,7 @@
 
     <section id="skills">
       <div id="full-skills-page">
-        <div>
+        <div id="skill-head">
           <h1 class="title">Skills/Qualities</h1>
           <h2 class="sub-title">My technical level</h2>
         </div>
@@ -102,7 +101,7 @@
           <div class="card">
             <div class="cardhead">
               <i class="uil uil-desktop"></i>
-              <p class="cardtext">
+              <p class="cardtext has">
                 Hardware and <br />
                 softwares
               </p>
@@ -162,16 +161,17 @@
         <div id="timeline-buttons">
           <div class="button education">
             <button onclick="educationButton">
-            <i class="uil uil-graduation-cap"
-              ><p class="button-text">Education</p></i
-            >
-          </button>
+              <i class="uil uil-graduation-cap">
+                <p class="button-text">Education</p>
+              </i>
+            </button>
           </div>
           <div class="button work">
-            <button onclick="workButton()"><i class="uil uil-suitcase"
-              ><p class="button-text">Work-placements</p></i
-            ></button>
-            
+            <button onclick="workButton()">
+              <i class="uil uil-suitcase">
+                <p class="button-text">Work-placements</p>
+              </i>
+            </button>
           </div>
         </div>
 
@@ -238,33 +238,37 @@
 
     <section id="nft">
       <h1>Waiting for OpenSea integration of RULES⌛</h1>
-      <a target="blank" href="https://rules.art/user/mattis/"><p>My profile</p></a>
+      <a target="blank" href="https://rules.art/user/mattis/">
+        <p>My profile</p>
+      </a>
     </section>
 
     <section id="contact">
       <div id="contact-head">
         <h1 class="title">Contact me</h1>
-          <h2 class="sub-title">Get in touch</h2>
+        <h2 class="sub-title">Get in touch</h2>
       </div>
 
       <div id="contact-elements">
-        <div class="contact-element"><i class="uil uil-phone"></i>
+        <div class="contact-element">
+          <i class="uil uil-phone"></i>
           <h4>Phone</h4>
         </div>
         <p>06 41 80 36 73</p>
-        <div class="contact-element"><i class="uil uil-envelope"></i>
-        <h4>Email</h4></div>
-        <p>mattisbbn@gmail.com</p>
-        <div class="contact-element"><i class="uil uil-map"></i>
-          <h4>Location</h4>
-          
+        <div class="contact-element">
+          <i class="uil uil-envelope"></i>
+          <h4>Email</h4>
         </div>
-        <p>2 rue du Charmille <br> 49610, Soulaines-sur-Aubance</p>
+        <p>mattisbbn@gmail.com</p>
+        <div class="contact-element">
+          <i class="uil uil-map"></i>
+          <h4>Location</h4>
+        </div>
+        <p>
+          2 rue du Charmille <br />
+          49610, Soulaines-sur-Aubance
+        </p>
       </div>
-      
-      
-    
-    
     </section>
   </body>
 </html>
