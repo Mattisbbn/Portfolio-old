@@ -142,7 +142,8 @@ li a:hover:not(#homelink) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 #subcard {
@@ -153,7 +154,6 @@ li a:hover:not(#homelink) {
   min-height: 300px;
   min-width: 300px;
 }
-
 
 .bartitle {
   color: #070606;
@@ -240,6 +240,7 @@ li a:hover:not(#homelink) {
 
 .uil {
   align-items: center;
+  justify-content: center;
   display: flex;
   font-size: 2.3rem;
   padding-right: 10px;
@@ -398,7 +399,6 @@ button {
   margin-bottom: 50px;
 }
 
-
 .card {
   align-items: center;
   background-color: #a9a8aa27;
@@ -424,12 +424,14 @@ button {
 }
 .subcard {
   align-items: center;
+  justify-content: center;
   background-color: #c6c7c9da;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 8rem;
+  height: 8rem;
 }
 
 .subcard i {
@@ -441,52 +443,57 @@ button {
   color: #070606;
   font-size: 1.2rem;
   font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-
-@media only screen and (max-device-width: 768px) {
-  #navbar{
+@media only screen and (max-width: 768px) {
+  #navbar {
     display: none;
   }
 
-  #blob{
+  #blob {
     display: none;
   }
 
-  #homepage{
+  #homepage {
     grid-template-columns: 1fr;
-  
   }
 
-
-  #introduction-text{
+  #introduction-text {
     margin-top: 35%;
   }
 }
 
-@media only screen and (max-device-width: 1024px) {
-  #skillcards{
-    grid-template-columns:1fr ;
+@media only screen and (max-width: 1024px) {
+  #skillcards {
+    grid-template-columns: 1fr;
     display: fixed;
   }
-  .card{
+  .card {
     padding-bottom: 40px;
   }
-
-  #fullabout{
+  #about-page {
+    margin-bottom: 200px;
+  }
+  #fullabout {
     max-width: 100%;
   }
 }
-@media only screen and (max-device-width: 425px){
-  #fullabout p{
+@media only screen and (max-width: 425px) {
+  #fullabout p {
     font-size: 1.4rem;
   }
 
-  .title{
-    font-size: 2.8rem ;
+  .title {
+    font-size: 2.8rem;
   }
-  .sub-title{
+  .sub-title {
     font-size: 1.2rem;
   }
-  
+}
+
+.has {
+  margin-bottom: 0;
+  margin-top: 14px;
 }
