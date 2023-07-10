@@ -309,7 +309,7 @@ li a:hover:not(#homelink) {
 
 .timeline-border {
   border-radius: 10px;
-  height: 150px;
+  height: 190px;
 }
 
 #timeline-buttons {
@@ -507,4 +507,13 @@ button {
   .card {
     padding-bottom: 40px;
   }
+}
+
+
+#work-timeline{
+  display: none;
+}
+
+.uil-suitcase{
+  color: #0706066e;
 }
