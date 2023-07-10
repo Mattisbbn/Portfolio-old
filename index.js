@@ -1,4 +1,3 @@
-
 function educationButton(){
     document.getElementById("education-timeline").style.display="block";
     document.getElementById("work-timeline").style.display="none";
