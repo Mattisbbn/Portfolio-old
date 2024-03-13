@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
+:root{
+  --purple:#705edc;
+  --white:#eaebed;
+  --gray:#89878bd7;
+}
 a{
   color: #000;
   text-decoration: none;
@@ -11,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #eaebed;
+  background-color: var(--white);
   font-family: Poppins;
   max-width: 85%;
   margin: auto;
@@ -25,7 +30,7 @@ header {
 
 li a {
   text-decoration: none;
-  color: #705edc;
+  color: var(--purple);
   border-radius: 10px;
   padding: 8px;
   margin-left: 15px;
@@ -40,7 +45,7 @@ ul {
 
 #logo {
   font-weight: 800;
-  color: #705edc;
+  color: var(--purple);
   font-size: 2rem;
 }
 
@@ -50,12 +55,12 @@ ul {
   justify-content: end;
 }
 #homelink {
-  background-color: #705edc;
-  color: #eaebed;
+  background-color: var(--purple);
+  color: var(--white);
 }
 li a:hover:not(#homelink) {
-  background-color: #705edc;
-  color: #eaebed;
+  background-color: var(--purple);
+  color: var(--white);
   transition: 0.2s;
 }
 
@@ -72,7 +77,7 @@ li a:hover:not(#homelink) {
 }
 
 #name {
-  color: #705edc;
+  color: var(--purple);
   font-weight: 800;
 }
 
@@ -108,7 +113,7 @@ li a:hover:not(#homelink) {
 .sub-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #89878bd7;
+  color: var(--gray);
   margin: 0;
   margin-top: -20px;
   margin-bottom: 3rem;
@@ -122,12 +127,12 @@ li a:hover:not(#homelink) {
 }
 
 #fullabout p span {
-  color: #705edc;
+  color: var(--purple);
   font-weight: 800;
 }
 
 #ps {
-  color: #89878bd7;
+  color: var(--gray);
   font-weight: 300 !important;
   font-size: 1.2rem !important;
   margin: 0;
@@ -171,55 +176,55 @@ li a:hover:not(#homelink) {
 }
 
 #cssbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 65%;
 }
 
 #htmlbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 85%;
 }
 
 #adobebar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 50%;
 }
 
 #jsbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 25%;
 }
 
 #linuxbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 25%;
 }
 
 #pcbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 98%;
 }
 #pybar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 15%;
 }
 
 #repairbar {
-  background-color: #705edc;
+  background-color: var(--purple);
   border-radius: 10px;
   height: 100%;
   width: 80%;
@@ -249,7 +254,7 @@ li a:hover:not(#homelink) {
   display: flex;
   font-size: 2.3rem;
   padding-right: 10px;
-  color: #705edc;
+  color: var(--purple);
 }
 
 #qualfication {
@@ -273,7 +278,7 @@ li a:hover:not(#homelink) {
 }
 
 .dots {
-  background-color: #705edc;
+  background-color: var(--purple);
   height: 5px;
   width: 5px;
   padding: 10px;
@@ -294,7 +299,7 @@ li a:hover:not(#homelink) {
 
 .timeline-text p {
   margin: 0;
-  color: #89878bd7;
+  color: var(--gray);
 }
 
 .date {
@@ -309,7 +314,7 @@ li a:hover:not(#homelink) {
 }
 
 .filled {
-  background-color: #705edc;
+  background-color: var(--purple);
 }
 
 .timeline-border {
@@ -358,7 +363,7 @@ button {
 
 #nft a {
   text-decoration: none;
-  color: #89878bd7;
+  color: var(--gray);
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -372,7 +377,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #705edc;
+  background: var(--purple);
   border-radius: 10px;
 }
 
