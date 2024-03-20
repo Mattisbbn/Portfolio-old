@@ -14,38 +14,37 @@
     <link rel="icon" href="logo.png" />
     <script src="index.js"></script>
   </head>
+  <header>
+    <p id="logo">Mattis.</p>
+
+    <div id="navbar">
+      <ul>
+        <li><a id="homelink" href="#Homepage">Accueil</a></li>
+        <li><a href="#about-page">Profil</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#qualfication">Qualification</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="settings" onclick="settings()">
+            <i class="uil uil-setting"></i>
+          </button>
+        </li>
+      </ul>
+      <div id="settingsContainer">
+        <div id="settingsTop">
+          <button onclick="settings()">
+            <i id="closeSettings" class="uil uil-times"></i>
+          </button>
+        </div>
+        <div>
+          <a id="englishVersion" href="">English version <br> comming soon</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <body>
     <div id="full-homepage">
-      <header>
-        <div id="logo">
-          <p>Mattis.</p>
-        </div>
-        <div id="navbar">
-          <ul>
-            <li><a id="homelink" href="#Homepage">Accueil</a></li>
-            <li><a href="#about-page">Profil</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#qualfication">Qualification</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <button id="settings" onclick="settings()">
-                <i class="uil uil-setting"></i>
-              </button>
-            </li>
-          </ul>
-          <div id="settingsContainer">
-            <div id="settingsTop">
-              <button onclick="settings()">
-                <i id="closeSettings" class="uil uil-times"></i>
-              </button>
-            </div>
-            <div>
-              <a id="englishVersion" href="indexEN.html">English Version</a>
-            </div>
-          </div>
-        </div>
-      </header>
       <section id="homepage">
         <div>
           <h1 id="introduction-text">
@@ -53,9 +52,16 @@
             je suis en BTS SIO
           </h1>
           <a
-            id="cvButton"
+            class="homeButtons"
             href="https://drive.google.com/uc?export=download&id=1Mv1h-ibSDed5oK9ehfItn-Ra-kHWzVUH"
-            >Mon CV <i class="uil uil-file-download"></i
+            >Mon CV<i class="uil uil-file-download"></i
+          ></a>
+
+          <a
+            class="homeButtons"
+            target="_blank"
+            href="https://github.com/Mattis49"
+            >Github<i class="uil uil-github"></i
           ></a>
         </div>
 

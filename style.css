@@ -18,9 +18,9 @@ html {
 
 body {
   background-color: var(--white);
-  font-family: Poppins;
   max-width: 85%;
   margin: auto;
+  font-family: Poppins;
   overflow-y: scroll;
 }
 
@@ -67,18 +67,18 @@ ul {
   transition: transform 1s;
 }
 
-
-#settings:hover{
+#settings:hover {
   transform: rotate(360deg);
 }
 
 #settingsContainer {
   display: none;
-  width: 100px;
+  width: 180px;
   height: 100px;
   background-color: var(--purple);
   position: absolute;
   border-radius: 10px;
+ 
 }
 
 #settingContainer a {
@@ -91,6 +91,7 @@ ul {
 
 #englishVersion {
   color: var(--white);
+  margin: auto;
 }
 
 #closeSettings {
@@ -110,15 +111,19 @@ li a:hover:not(#homelink) {
   scroll-snap-align: start;
 }
 
-#cvButton {
+.homeButtons {
   padding: 10px;
   border-radius: 6px;
   border: 2px solid var(--purple);
   font-weight: 700;
+  font-size: 1.1rem;
   transition: background-color 0.8s;
 }
-
-#cvButton:hover {
+.homeButtons i {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+.homeButtons:hover {
   background-color: var(--lightPurple);
 }
 
@@ -584,6 +589,5 @@ button {
 }
 
 .aboutLinks:hover {
-
   border-color: black;
 }
