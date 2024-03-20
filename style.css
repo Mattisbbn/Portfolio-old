@@ -1,11 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
-:root{
-  --purple:#705edc;
-  --white:#eaebed;
-  --gray:#89878bd7;
+:root {
+  --purple: #705edc;
+  --white: #eaebed;
+  --gray: #89878bd7;
+  --lightPurple: #c6bcf3;
 }
-a{
+a {
   color: #000;
   text-decoration: none;
 }
@@ -58,16 +59,67 @@ ul {
   background-color: var(--purple);
   color: var(--white);
 }
+
+#settings {
+  margin-left: 10px;
+  font-size: 1.75rem;
+  padding: 0;
+  transition: transform 1s;
+}
+
+
+#settings:hover{
+  transform: rotate(360deg);
+}
+
+#settingsContainer {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: var(--purple);
+  position: absolute;
+  border-radius: 10px;
+}
+
+#settingContainer a {
+  color: var(--white);
+}
+
+#settingsTop {
+  text-align: right;
+}
+
+#englishVersion {
+  color: var(--white);
+}
+
+#closeSettings {
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
 li a:hover:not(#homelink) {
   background-color: var(--purple);
   color: var(--white);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 #full-homepage {
   height: 100vh !important;
   align-items: center;
   scroll-snap-align: start;
+}
+
+#cvButton {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid var(--purple);
+  font-weight: 700;
+  transition: background-color 0.8s;
+}
+
+#cvButton:hover {
+  background-color: var(--lightPurple);
 }
 
 #homepage {
@@ -230,7 +282,7 @@ li a:hover:not(#homelink) {
   width: 80%;
 }
 .bar {
-  background-color: #c6bcf3;
+  background-color: var(--lightPurple);
   border-radius: 10px;
   display: flex;
   height: 1.2rem;
@@ -247,14 +299,15 @@ li a:hover:not(#homelink) {
   margin-bottom: -14px;
   padding-top: 20px;
 }
-
 .uil {
+  color: var(--purple);
+}
+.uilBottom {
   align-items: center;
   justify-content: center;
   display: flex;
   font-size: 2.3rem;
   padding-right: 10px;
-  color: var(--purple);
 }
 
 #qualfication {
@@ -273,7 +326,7 @@ li a:hover:not(#homelink) {
   display: flex;
   height: 200px;
   width: 0.3rem;
-  background-color: #c6bcf3;
+  background-color: var(--lightPurple);
   justify-content: center;
 }
 
@@ -373,7 +426,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-  background-color: #c6bcf3;
+  background-color: var(--lightPurple);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -443,7 +496,6 @@ button {
   width: 8rem;
   height: 8rem;
 }
-
 .subcard i {
   align-items: center;
   padding: 0;
@@ -499,7 +551,6 @@ button {
     font-size: 2.8rem;
   }
   .sub-title {
-
     font-size: 1.2rem;
   }
 }
@@ -508,7 +559,6 @@ button {
   margin-bottom: 0;
   margin-top: 14px;
 }
-
 
 @media only screen and (max-width: 1400px) {
   #skillcards {
@@ -520,21 +570,20 @@ button {
   }
 }
 
-
-#work-timeline{
+#work-timeline {
   display: none;
 }
 
-.uil-suitcase{
+.uil-suitcase {
   color: #0706066e;
 }
 
 .aboutLinks {
-  
   border-bottom: 2px solid transparent;
+  transition: border-color 0.8s;
 }
 
 .aboutLinks:hover {
-  transition: 0.8s;
+
   border-color: black;
 }

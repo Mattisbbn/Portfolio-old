@@ -11,3 +11,12 @@ document.getElementById("work-timeline").style.display="block";
 document.getElementById("uil-graduation-cap").style.color="#0706066e";
 document.getElementById("uil-suitcase").style.color="#705edc";
 }
+
+function settings(){
+    let settingsContainer = document.getElementById("settingsContainer");
+    if (settingsContainer.style.display === "none"){
+        settingsContainer.style.display = "block"
+    }else{
+        settingsContainer.style.display = "none"
+    }
+}

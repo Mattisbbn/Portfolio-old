@@ -28,14 +28,36 @@
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#qualfication">Qualification</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+              <button id="settings" onclick="settings()">
+                <i class="uil uil-setting"></i>
+              </button>
+            </li>
           </ul>
+          <div id="settingsContainer">
+            <div id="settingsTop">
+              <button onclick="settings()">
+                <i id="closeSettings" class="uil uil-times"></i>
+              </button>
+            </div>
+            <div>
+              <a id="englishVersion" href="indexEN.html">English Version</a>
+            </div>
+          </div>
         </div>
       </header>
       <section id="homepage">
-        <h1 id="introduction-text">
-          Salut, je m'appelle <span id="name">Mattis</span><br />
-          je suis en BTS SIO
-        </h1>
+        <div>
+          <h1 id="introduction-text">
+            Salut, je m'appelle <span id="name">Mattis</span><br />
+            je suis en BTS SIO
+          </h1>
+          <a
+            id="cvButton"
+            href="https://drive.google.com/uc?export=download&id=1Mv1h-ibSDed5oK9ehfItn-Ra-kHWzVUH"
+            >Mon CV <i class="uil uil-file-download"></i
+          ></a>
+        </div>
 
         <div id="blob">
           <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -55,11 +77,19 @@
         <h2 class="sub-title">Qui suis-je ?</h2>
         <p>
           Je m'appelle <span>Mattis</span>, j'ai 18 ans et je suis actuellement
-          en première année de <a target="_blank" class="aboutLinks" href="https://maglit.me/cochiam">BTS SIO option SLAM</a> à <a target="_blank" class="aboutLinks" href="https://maglit.me/vobo">MyDigitalSchool</a>. J'aime
-          toucher à tout et être autonome sur les projets que l'on me confie.
+          en première année de
+          <a target="_blank" class="aboutLinks" href="https://maglit.me/cochiam"
+            >BTS SIO option SLAM</a
+          >
+          à
+          <a target="_blank" class="aboutLinks" href="https://maglit.me/vobo"
+            >MyDigitalSchool</a
+          >. J'aime toucher à tout et être autonome sur les projets que l'on me
+          confie.
         </p>
         <p id="ps">
-          (ps : Je suis à la recherche d’une alternance, n’hésitez pas à me contacter si vous êtes intéressés.)
+          (ps : Je suis à la recherche d’une alternance, n’hésitez pas à me
+          contacter si vous êtes intéressés.)
         </p>
       </div>
     </section>
@@ -74,7 +104,7 @@
         <div id="skillcards">
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-brackets-curly"></i>
+              <i class="uilBottom uil uil-brackets-curly"></i>
               <p class="cardtext">Programmation</p>
             </div>
             <p class="bartitle">HTML / CSS</p>
@@ -96,7 +126,7 @@
           </div>
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-desktop"></i>
+              <i class="uilBottom uil uil-desktop"></i>
               <p class="cardtext has">
                 Hardware et <br />
                 softwares
@@ -121,25 +151,25 @@
           </div>
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-brain"></i>
+              <i class="uilBottom uil uil-brain"></i>
               <p class="cardtext">Qualitées</p>
             </div>
             <div id="subcard">
               <div class="subcard">
                 <p>Patient</p>
-                <i class="uil uil-hourglass"></i>
+                <i class="uilBottom uil uil-hourglass"></i>
               </div>
               <div class="subcard">
                 <p>Ponctuel</p>
-                <i class="uil uil-clock"></i>
+                <i class="uilBottom uil uil-clock"></i>
               </div>
               <div class="subcard">
                 <p>Diligent</p>
-                <i class="uil uil-star"></i>
+                <i class="uilBottom uil uil-star"></i>
               </div>
               <div class="subcard">
                 <p>À l'écoute</p>
-                <i class="uil uil-ear"></i>
+                <i class="uilBottom uil uil-ear"></i>
               </div>
             </div>
           </div>
@@ -157,14 +187,17 @@
         <div id="timeline-buttons">
           <div class="button education">
             <button onclick="educationButton()">
-              <i class="uil uil-graduation-cap" id="uil-graduation-cap">
+              <i
+                class="uilBottom uil uil-graduation-cap"
+                id="uil-graduation-cap"
+              >
                 <p class="button-text">Education</p>
               </i>
             </button>
           </div>
           <div class="button work">
             <button onclick="workButton()">
-              <i class="uil uil-suitcase" id="uil-suitcase">
+              <i class="uilBottom uil uil-suitcase" id="uil-suitcase">
                 <p class="button-text">Experience</p>
               </i>
             </button>
@@ -186,7 +219,7 @@
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>2016-2020</p>
               </div>
             </div>
@@ -206,7 +239,7 @@
                 Verrieres-sur-Anjou
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>2020-2023</p>
               </div>
             </div>
@@ -223,7 +256,7 @@
                 Angers
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>Septembre 2023-Actuellement</p>
               </div>
             </div>
@@ -245,7 +278,7 @@
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>Mai 2021</p>
               </div>
             </div>
@@ -265,7 +298,7 @@
                 Les Ponts-de-Cé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>Juin 2021</p>
               </div>
             </div>
@@ -285,7 +318,7 @@
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>Juin 2022</p>
               </div>
             </div>
@@ -302,10 +335,10 @@
                 Saint-Melaine-sur-Aubance
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>
                   Novembre 2022 - Janvier 2023 <br />
-                   Mai 2022
+                  Mai 2022
                 </p>
               </div>
             </div>
@@ -322,17 +355,17 @@
 
       <div id="contact-elements">
         <div class="contact-element">
-          <i class="uil uil-phone"></i>
+          <i class="uilBottom uil uil-phone"></i>
           <h4>Numéro</h4>
         </div>
         <p>06 41 80 36 73</p>
         <div class="contact-element">
-          <i class="uil uil-envelope"></i>
+          <i class="uilBottom uil uil-envelope"></i>
           <h4>Email</h4>
         </div>
         <p>mattisbbn@gmail.com</p>
         <div class="contact-element">
-          <i class="uil uil-map"></i>
+          <i class="uilBottom uil uil-map"></i>
           <h4>Adresse</h4>
         </div>
         <p>
