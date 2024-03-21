@@ -1,19 +1,25 @@
-function educationButton(){
-    document.getElementById("education-timeline").style.display="block";
-    document.getElementById("work-timeline").style.display="none";
-    document.getElementById("uil-suitcase").style.color="#0706066e";
-    document.getElementById("uil-graduation-cap").style.color="#705edc";
-}
-
 function workButton(){
-document.getElementById("education-timeline").style.display="none";
-document.getElementById("work-timeline").style.display="block";
-document.getElementById("uil-graduation-cap").style.color="#0706066e";
-document.getElementById("uil-suitcase").style.color="#705edc";
+    let educationStyle = document.getElementById("education-timeline").style;
+    let workStyle = document.getElementById("work-timeline").style;
+    let educationIcon = document.getElementById("uil-graduation-cap").style;
+    let suitcaseIcon = document.getElementById("uil-suitcase").style;
+
+    if(educationStyle.display === 'block'){
+        educationStyle.display = 'none' 
+        workStyle.display = 'block';
+        educationIcon.color="#0706066e";
+        suitcaseIcon.color="var(--purple)";
+    }else{
+        educationStyle.display = 'block' 
+        workStyle.display = 'none';
+        educationIcon.color=" var(--purple)";
+        suitcaseIcon.color="#0706066e";
+    }
 }
 
 function settings(){
     let settingsContainer = document.getElementById("settingsContainer");
+
     if (settingsContainer.style.display === "none"){
         settingsContainer.style.display = "block"
     }else{
