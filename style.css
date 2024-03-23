@@ -64,11 +64,11 @@ ul {
   margin-left: 10px;
   font-size: 1.75rem;
   padding: 0;
-  transition: transform 1s;
+  transition: transform 0.6s;
 }
 
 #settings:hover {
-  transform: rotate(360deg);
+  transform: rotate(60deg);
 }
 
 #settingsContainer {
@@ -78,6 +78,7 @@ ul {
   background-color: var(--purple);
   position: absolute;
   border-radius: 10px;
+  margin-top: 110px;
  
 }
 
@@ -145,7 +146,7 @@ li a:hover:not(#homelink) {
 }
 #introduction-text {
   font-weight: 900;
-  font-size: 2.7rem;
+  font-size: 3.1rem;
 }
 
 #about-page {

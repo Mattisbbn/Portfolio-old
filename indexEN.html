@@ -14,28 +14,56 @@
     <link rel="icon" href="logo.png" />
     <script src="index.js"></script>
   </head>
+  <header>
+    <p id="logo">Mattis.</p>
+
+    <div id="navbar">
+      <ul>
+        <li><a id="homelink" href="#Homepage">Home</a></li>
+        <li><a href="#about-page">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#qualfication">Qualifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="settings" onclick="settings()">
+            <i class="uil uil-setting"></i>
+          </button>
+        </li>
+      </ul>
+      <div id="settingsContainer">
+        <div id="settingsTop">
+          <button onclick="settings()">
+            <i id="closeSettings" class="uil uil-times"></i>
+          </button>
+        </div>
+        <div>
+          <a id="englishVersion" href="index.html">Version Francaise <br></a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <body>
     <div id="full-homepage">
-      <header>
-        <div id="logo">
-          <p>Mattis.</p>
-        </div>
-        <div id="navbar">
-          <ul>
-            <li><a id="homelink" href="#Homepage">Home</a></li>
-            <li><a href="#about-page">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#qualfication">Qualification</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </header>
       <section id="homepage">
-        <h1 id="introduction-text">
-          Hi , i'am <span id="name">Mattis</span><br />
-          Student in BTEC HND SIO
-        </h1>
+        <div>
+          <h1 id="introduction-text">
+            Hi, my name is <span id="name">Mattis</span><br />
+            Student in HND BTEC SIO
+          </h1>
+          <a
+            class="homeButtons"
+            href="https://drive.google.com/uc?export=download&id=1Mv1h-ibSDed5oK9ehfItn-Ra-kHWzVUH"
+            >Mon CV<i class="uil uil-file-download"></i
+          ></a>
+
+          <a
+            class="homeButtons"
+            target="_blank"
+            href="https://github.com/Mattis49"
+            >Github<i class="uil uil-github"></i
+          ></a>
+        </div>
 
         <div id="blob">
           <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -52,18 +80,19 @@
     <section id="about-page">
       <div id="fullabout">
         <h1 class="title">About me</h1>
-        <h2 class="sub-title">My introduction</h2>
+        <h2 class="sub-title">Who I am ?</h2>
         <p>
-          My name is <span>Mattis</span> and I am 18 years old. As a self-taught
-          learner, I'm passionate about web development and I obtained my BTEC
-          IT Digital Systems with european mention at Saint Aubin La Salle's vocational school so i decided to
-          join MyDigitalSchool in September 2023 to continue my studies in BTEC HND SIO.
-          Through my portfolio, I want to share my skills and achievements in
-          web development.
+          My name is<span>Mattis</span>, I'm 18 years old and I'm currently in my first year of
+          <a target="_blank" class="aboutLinks" href="https://maglit.me/cochiam"
+            >BTS SIO SLAM</a
+          >
+          at
+          <a target="_blank" class="aboutLinks" href="https://maglit.me/vobo"
+            >MyDigitalSchool</a
+          >. I like to dabble in everything and be independent on the projects I'm given.
         </p>
         <p id="ps">
-          (ps: I am looking for an apprenticeship, don't hesitate to contact me
-          if you are interested)
+          (ps: I'm looking for a work-study placement, so please don't hesitate to contact me if you're interested).
         </p>
       </div>
     </section>
@@ -78,72 +107,72 @@
         <div id="skillcards">
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-brackets-curly"></i>
-              <p class="cardtext">Development</p>
+              <i class="uilBottom uil uil-brackets-curly"></i>
+              <p class="cardtext">Programming</p>
             </div>
-            <p class="bartitle">HTML</p>
+            <p class="bartitle">HTML / CSS</p>
             <div class="bar">
               <div id="htmlbar"></div>
             </div>
-            <p class="bartitle">CSS</p>
+            <p class="bartitle">JavaScript</p>
             <div class="bar">
               <div id="cssbar"></div>
             </div>
-            <p class="bartitle">JavaScript</p>
+            <p class="bartitle">PHP</p>
             <div class="bar">
               <div id="jsbar"></div>
             </div>
-            <p class="bartitle">PHP</p>
+            <p class="bartitle">SQL</p>
             <div class="bar">
               <div id="pybar"></div>
             </div>
           </div>
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-desktop"></i>
+              <i class="uilBottom uil uil-desktop"></i>
               <p class="cardtext has">
                 Hardware and <br />
                 softwares
               </p>
             </div>
-            <p class="bartitle">Mounting pc's / server's</p>
+            <p class="bartitle">Building PC and servers</p>
             <div class="bar">
               <div id="pcbar"></div>
             </div>
-            <p class="bartitle">computer repair</p>
+            <p class="bartitle">Repairing computers</p>
             <div class="bar">
               <div id="repairbar"></div>
             </div>
-            <p class="bartitle">Adobe suite</p>
+            <p class="bartitle">Git</p>
             <div class="bar">
               <div id="adobebar"></div>
             </div>
-            <p class="bartitle">Linux</p>
+            <p class="bartitle">Adobe suite</p>
             <div class="bar">
               <div id="linuxbar"></div>
             </div>
           </div>
           <div class="card">
             <div class="cardhead">
-              <i class="uil uil-brain"></i>
+              <i class="uilBottom uil uil-brain"></i>
               <p class="cardtext">Qualities</p>
             </div>
             <div id="subcard">
               <div class="subcard">
                 <p>Patient</p>
-                <i class="uil uil-hourglass"></i>
+                <i class="uilBottom uil uil-hourglass"></i>
               </div>
               <div class="subcard">
                 <p>Ponctual</p>
-                <i class="uil uil-clock"></i>
+                <i class="uilBottom uil uil-clock"></i>
               </div>
               <div class="subcard">
                 <p>Diligent</p>
-                <i class="uil uil-star"></i>
+                <i class="uilBottom uil uil-star"></i>
               </div>
               <div class="subcard">
-                <p>listening</p>
-                <i class="uil uil-ear"></i>
+                <p>Listening</p>
+                <i class="uilBottom uil uil-ear"></i>
               </div>
             </div>
           </div>
@@ -160,16 +189,19 @@
 
         <div id="timeline-buttons">
           <div class="button education">
-            <button onclick="educationButton()">
-              <i class="uil uil-graduation-cap" id="uil-graduation-cap">
+            <button onclick="workButton()">
+              <i
+                class="uilBottom uil uil-graduation-cap"
+                id="uil-graduation-cap"
+              >
                 <p class="button-text">Education</p>
               </i>
             </button>
           </div>
           <div class="button work">
             <button onclick="workButton()">
-              <i class="uil uil-suitcase" id="uil-suitcase">
-                <p class="button-text">Experiences</p>
+              <i class="uilBottom uil uil-suitcase" id="uil-suitcase">
+                <p class="button-text">Experience</p>
               </i>
             </button>
           </div>
@@ -182,15 +214,15 @@
             </div>
             <div class="timeline-text">
               <h1>
-                Saint-Vincent's <br />
-                Middle School
+                Saint-Vincent <br />
+                Middle school
               </h1>
               <p>
-                GCSE <br />
+                DNB <br />
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>2016-2020</p>
               </div>
             </div>
@@ -202,15 +234,15 @@
             </div>
             <div class="timeline-text">
               <h1>
-                Saint Aubin La Salle's <br />
-                vocational school
+                Saint Aubin La Salle <br />
+                High school
               </h1>
               <p>
-                BTEC IT digital systems <br />
-                Verrieres-sur-Anjou - High School
+                BAC PRO systemes Numériques <br />
+                Verrieres-sur-Anjou
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>2020-2023</p>
               </div>
             </div>
@@ -223,12 +255,12 @@
             <div class="timeline-text">
               <h1>MyDigitalSchool</h1>
               <p>
-                BTEC HND SIO (BTS SIO)<br />
+                BTS SIO SLAM<br />
                 Angers
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
-                <p>September 2023</p>
+                <i class="uilBottom uil uil-calendar-alt"></i>
+                <p>September 2023-Now</p>
               </div>
             </div>
           </div>
@@ -242,14 +274,14 @@
             <div class="timeline-text">
               <h1>
                 Leclerc <br />
-                (cultural space)
+                (Cultural space)
               </h1>
               <p>
-                Work placement <br />
+                Work-placment <br />
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>May 2021</p>
               </div>
             </div>
@@ -265,11 +297,11 @@
                 Dimension K
               </h1>
               <p>
-                Work placement<br />
+                Work-placment<br />
                 Les Ponts-de-Cé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>June 2021</p>
               </div>
             </div>
@@ -285,11 +317,11 @@
                 (trellising)
               </h1>
               <p>
-                Summer Job<br />
+                Summer job<br />
                 Brissac-Quincé
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>June 2022</p>
               </div>
             </div>
@@ -300,15 +332,13 @@
               <span class="dots"></span>
             </div>
             <div class="timeline-text">
-              <h1>
-                Electroniques-services<br />
-              </h1>
+              <h1>Electroniques services<br /></h1>
               <p>
-                Work placement<br />
+                Work-placment<br />
                 Saint-Melaine-sur-Aubance
               </p>
               <div class="date">
-                <i class="uil uil-calendar-alt"></i>
+                <i class="uilBottom uil uil-calendar-alt"></i>
                 <p>
                   November 2022 - January 2023 <br />
                   May 2022
@@ -320,30 +350,35 @@
       </div>
     </section>
 
-
     <section id="contact">
       <div id="contact-head">
         <h1 class="title">Contact me</h1>
-        <h2 class="sub-title">Get in touch</h2>
+        <h2 class="sub-title"></h2>
       </div>
 
       <div id="contact-elements">
         <div class="contact-element">
-          <i class="uil uil-phone"></i>
+          <i class="uilBottom uil uil-phone"></i>
           <h4>Phone</h4>
         </div>
         <p>06 41 80 36 73</p>
         <div class="contact-element">
-          <i class="uil uil-envelope"></i>
+          <i class="uilBottom uil uil-envelope"></i>
           <h4>Email</h4>
         </div>
-        <p>mattisbbn@gmail.com</p>
+        <p><a class="aboutLinks" href="mailto:mattisbbn@gmail.com">mattisbbn@gmail.com</a></p>
         <div class="contact-element">
-          <i class="uil uil-map"></i>
-          <h4>Location</h4>
+        <i class="uilBottom uil uil-linkedin"></i>
+          <h4>Linkedin</h4>
+        </div>
+        <p><a class="aboutLinks" href="https://www.linkedin.com/in/mattisbbn/">linkedin.com/in/mattisbbn</a></p>
+       
+        <div class="contact-element">
+          <i class="uilBottom uil uil-map"></i>
+          <h4>Adress</h4>
         </div>
         <p>
-          Soulaines-sur-Aubance, 49610 <br />
+          Soulaines-sur-Aubance, 49610 <br /> 
           Maine-et-Loire, France
         </p>
       </div>
