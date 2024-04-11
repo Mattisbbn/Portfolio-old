@@ -55,6 +55,22 @@ ul {
   align-items: center;
   justify-content: end;
 }
+#sidebar{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#sidebar i{
+  font-size: 2.3rem;
+}
+
+#sidebarContainer{
+position: absolute;
+width: 100px;
+height: 200px;
+background-color: var(--gray);
+}
 #homelink {
   background-color: var(--purple);
   color: var(--white);
@@ -322,19 +338,22 @@ li a:hover:not(#homelink) {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px;
 }
 
 .timeline-container {
   display: flex;
 }
 
-.timeline {
+.timeline{
   display: flex;
-  height: 200px;
+  height: 190px;
   width: 0.3rem;
   background-color: var(--lightPurple);
   justify-content: center;
 }
+
+
 
 .dots {
   background-color: var(--purple);
@@ -354,6 +373,7 @@ li a:hover:not(#homelink) {
 
 .timeline-text h1 {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .timeline-text p {
@@ -361,7 +381,7 @@ li a:hover:not(#homelink) {
   color: var(--gray);
 }
 
-.date {
+.date{
   display: flex;
   align-items: center;
   margin-top: 10px;

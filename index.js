@@ -26,3 +26,13 @@ function settings(){
         settingsContainer.style.display = "none"
     }
 }
+
+function openSidebar(){
+    const sidebarContainer = document.getElementById("sidebar");
+
+    if (sidebarContainer.style.display != "none"){
+        sidebarContainer.style.display = 'none'
+    }else {
+        sidebarContainer.style.display = 'flex'
+    }
+}
