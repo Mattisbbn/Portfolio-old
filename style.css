@@ -5,10 +5,7 @@
   --white: #eaebed;
   --gray: #89878bd7;
   --lightPurple: #c6bcf3;
-}
-a {
-  color: #000;
-  text-decoration: none;
+  --black: #000000;
 }
 
 html {
@@ -29,8 +26,11 @@ header {
   grid-template-columns: 8rem 1fr;
 }
 
-li a {
+a {
   text-decoration: none;
+}
+
+li a {
   color: var(--purple);
   border-radius: 10px;
   padding: 8px;
@@ -121,17 +121,37 @@ li a:hover:not(#homelink) {
   transition: 0.3s;
 }
 
+.homeContainer{
+  display: flex;
+
+}
+
 .homeButtons {
   padding: 10px;
+  margin-right: 3px;
   border-radius: 6px;
   border: 2px solid var(--purple);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: background-color 0.8s;
+}
+
+.homeButtons a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.homeButtons p {
+  margin: 0;
+  padding: 0;
+ display: flex;
+ color: var(--black);
 }
 .homeButtons i {
   font-size: 1.5rem;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 .homeButtons:hover {
   background-color: var(--lightPurple);
@@ -159,7 +179,6 @@ li a:hover:not(#homelink) {
 }
 
 #about-page {
-  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   align-items: center;
@@ -326,8 +345,6 @@ li a:hover:not(#homelink) {
 }
 
 #qualfication {
-  height: 100vh;
-  scroll-snap-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,32 +432,6 @@ button {
   cursor: pointer;
 }
 
-#nft {
-  height: 100vh;
-  scroll-snap-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#nft h1 {
-  font-weight: 800;
-  font-size: 3rem;
-  text-align: center;
-  color: #3c3c3c;
-  margin: 0;
-}
-
-#nft a {
-  text-decoration: none;
-  color: var(--gray);
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-
-#nft a p {
-  margin: 0;
-}
 
 ::-webkit-scrollbar {
   background-color: var(--lightPurple);
@@ -452,7 +443,6 @@ button {
 }
 
 #contact {
-  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   align-items: center;
@@ -558,6 +548,7 @@ button {
   #fullabout {
     max-width: 100%;
   }
+
 }
 @media only screen and (max-width: 425px) {
   #fullabout p {
@@ -565,12 +556,23 @@ button {
   }
 
   .title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
+  
   .sub-title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #introduction-text{
+    font-size: 2.5rem;
+  }
+
+  #homepage{
+    margin-bottom: 50px;
   }
 }
+
+
 
 .has {
   margin-bottom: 0;
@@ -598,8 +600,15 @@ button {
 .aboutLinks {
   border-bottom: 2px solid transparent;
   transition: border-color 0.8s;
+  color: var(--black);
 }
 
 .aboutLinks:hover {
-  border-color: black;
+  border-color: var(--black);
 }
+section:not(#homepage){
+  min-height: 100vh;
+  display: flex;
+  
+}
+
