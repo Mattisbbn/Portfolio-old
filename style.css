@@ -121,9 +121,8 @@ li a:hover:not(#homelink) {
   transition: 0.3s;
 }
 
-.homeContainer{
+.homeContainer {
   display: flex;
-
 }
 
 .homeButtons {
@@ -136,18 +135,17 @@ li a:hover:not(#homelink) {
   transition: background-color 0.8s;
 }
 
-.homeButtons a{
+.homeButtons a {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-
 .homeButtons p {
   margin: 0;
   padding: 0;
- display: flex;
- color: var(--black);
+  display: flex;
+  color: var(--black);
 }
 .homeButtons i {
   font-size: 1.5rem;
@@ -171,7 +169,6 @@ li a:hover:not(#homelink) {
 #introduction {
   display: flex;
   align-items: center;
-  scroll-snap-align: center;
 }
 #introduction-text {
   font-weight: 900;
@@ -179,15 +176,11 @@ li a:hover:not(#homelink) {
 }
 
 #about-page {
-  scroll-snap-align: center;
-  display: flex;
-  align-items: center;
-}
-
-#fullabout {
   text-align: center;
   max-width: 55%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .title {
   font-size: 3.2rem;
@@ -206,32 +199,29 @@ li a:hover:not(#homelink) {
   text-align: center;
 }
 
-#fullabout p {
-  font-size: 1.7rem;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-#fullabout p span {
+#about-page p span {
   color: var(--purple);
   font-weight: 800;
 }
 
+#aboutText {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
 #ps {
   color: var(--gray);
-  font-weight: 300 !important;
-  font-size: 1.2rem !important;
+  font-weight: 300;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 #skills {
   justify-content: center;
   align-items: center;
-  display: flex;
-}
-
-#full-skills-page {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #skillcards {
@@ -343,12 +333,9 @@ li a:hover:not(#homelink) {
   font-size: 2.3rem;
   padding-right: 10px;
 }
-
 #qualfication {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px;
+  flex-direction: column;
 }
 
 .timeline-container {
@@ -432,7 +419,6 @@ button {
   cursor: pointer;
 }
 
-
 ::-webkit-scrollbar {
   background-color: var(--lightPurple);
 }
@@ -443,7 +429,6 @@ button {
 }
 
 #contact {
-  scroll-snap-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -545,34 +530,31 @@ button {
   #about-page {
     margin-bottom: 200px;
   }
-  #fullabout {
+  #about-page {
     max-width: 100%;
   }
-
 }
 @media only screen and (max-width: 425px) {
-  #fullabout p {
+  #about-page p {
     font-size: 1.4rem;
   }
 
   .title {
     font-size: 2.2rem;
   }
-  
+
   .sub-title {
     font-size: 0.8rem;
   }
 
-  #introduction-text{
+  #introduction-text {
     font-size: 2.5rem;
   }
 
-  #homepage{
+  #homepage {
     margin-bottom: 50px;
   }
 }
-
-
 
 .has {
   margin-bottom: 0;
@@ -606,9 +588,9 @@ button {
 .aboutLinks:hover {
   border-color: var(--black);
 }
-section:not(#homepage){
+section:not(#homepage) {
   min-height: 100vh;
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
 }
-
